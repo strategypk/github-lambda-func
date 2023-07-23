@@ -1,7 +1,7 @@
 import json
 def lambda_handler(event, context):
     data=json.dumps(event)
-    downloadlink = "https://finance.yahoo.com/quote/CRM"
+    downloadlink = "https://finance.yahoo.com/quote/AMZN"
     return {'statusCode': 200, 'headers': {'Content-Type': 'application/json'}, 'body': json.dumps(downloadlink)}
 
 print('Recommended Stock of the Day July 21 sec : CRM')
@@ -10,3 +10,4 @@ print('Recommended Stock of the Day July 21 sec : CRM')
 # downloadlink = "https://finance.yahoo.com/quote/MSFT"
 # downloadlink = "https://finance.yahoo.com/quote/NFLX"
 # downloadlink = "https://finance.yahoo.com/quote/NVDA"
+# downloadlink = "https://finance.yahoo.com/quote/CRM"
